@@ -14,6 +14,8 @@ $ bundle exec ruby main.rb
 
 ## Docker イメージ
 
+bTS メンバーなら誰でも push できるようにしたい..
+
 ```
 $ docker build -t mozamimy/bts-bot .
 $ docker push mozamimy/bts-bot:latest
