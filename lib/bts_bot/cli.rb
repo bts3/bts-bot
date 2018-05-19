@@ -17,15 +17,8 @@ module BtsBot
         token: ENV.fetch('SECRET_TOKEN'),
         prefix: '!',
       )
-      Iokuji.new(@iokuji_file_path).set_callback(@bot)
 
-      @bot.command :echo do |e, str|
-        str
-      end
-
-      @bot.command :usagi do |e, str|
-        'かわいい'
-      end
+      load_plugins
     end
 
     def run
@@ -40,6 +33,12 @@ module BtsBot
         opts.version = BtsBot::VERSION
         opts.on('-i', '--iokuji=FILE', 'The iokuji spec file path') { |i| @iokuji_file_path = i }
       end
+    end
+
+    def load_plugins
+      Iokuji.new(@iokuji_file_path).set_callback(@bot)
+      Echo.new.set_callback(@bot)
+      Usagi.new.set_callback(@bot)
     end
   end
 end
