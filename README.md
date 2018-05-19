@@ -8,6 +8,7 @@ PR 歓迎です :rabbit: :sparkles:
 
 - `/echo`: オウム返しする
 - `/usagi` 「かわいい」と返す
+- `/iokuji`: いおくじ
 
 ## 手元で動かす
 
