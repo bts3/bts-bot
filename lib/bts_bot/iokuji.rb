@@ -2,13 +2,18 @@ require 'yaml'
 
 module BtsBot
   class Iokuji
+    attr_reader :command, :description
+
     def initialize(iokuji_file_path)
       iokuji_file_path ||= File.expand_path('../../../config/iokuji.yml', __FILE__)
       @iokuji_spec = YAML.load_file(iokuji_file_path)
+
+      @command = :iokuji
+      @description = '今日の運勢を占います'
     end
 
     def set_callback(bot)
-      bot.command :iokuji do |e, index|
+      bot.command(@command, description: @description) do |e, index|
         invoke(e, index)
       end
     end
