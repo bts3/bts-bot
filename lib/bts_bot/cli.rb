@@ -15,7 +15,7 @@ module BtsBot
       @bot = Discordrb::Commands::CommandBot.new(
         client_id: ENV.fetch('CLIENT_ID'),
         token: ENV.fetch('SECRET_TOKEN'),
-        prefix: '/',
+        prefix: '!',
       )
       Iokuji.new(@iokuji_file_path).set_callback(@bot)
 
