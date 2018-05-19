@@ -1,7 +1,14 @@
 module BtsBot
   class Usagi
+    attr_reader :command, :description
+
+    def initialize
+      @command = :usagi
+      @description = 'かわいい と返します (動作確認用)'
+    end
+
     def set_callback(bot)
-      bot.command :usagi do |e, str|
+      bot.command(@command, description: @description) do |e, str|
         invoke
       end
     end
