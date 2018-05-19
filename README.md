@@ -2,6 +2,8 @@
 
 http://balancerensa.net/
 
+PR 歓迎です :rabbit: :sparkles:
+
 ## 実装されているコマンド
 
 - `/echo`: オウム返しする
@@ -14,7 +16,7 @@ http://balancerensa.net/
 
 ```
 $ bundle install -j4
-$ bundle exec ruby main.rb
+$ bundle exec exe/bts_bot
 ```
 
 ## Docker イメージ

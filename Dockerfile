@@ -5,10 +5,8 @@ RUN env DEBIAN_FRONTEND=noninteractive apt-get update && \
     env DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential
 
 RUN mkdir /app
-COPY Gemfile Gemfile.lock /tmp/
-RUN cd /tmp && bundle install -j4 --deployment --path /gems
-
 WORKDIR /app
 COPY . /app
+RUN bundle install -j4 --deployment --path vendor/bundle
 
-CMD ["bundle", "exec", "ruby", "main.rb"]
+CMD ["bundle", "exec", "exe/bts_bot"]
