@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'discordrb'
+# Specify your gem's dependencies in nymphia.gemspec
+gemspec

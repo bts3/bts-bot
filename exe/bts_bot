@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'bts_bot/cli'
+
+BtsBot::CLI.start(ARGV)
