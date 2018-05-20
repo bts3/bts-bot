@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe BtsBot::Echo do
-  subject(:echo) { BtsBot::Echo.new }
+describe BtsBot::Plugin::Echo do
+  subject(:echo) { BtsBot::Plugin::Echo.new }
 
   describe '#describe' do
     it 'returns input string' do

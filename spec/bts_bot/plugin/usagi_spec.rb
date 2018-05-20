@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe BtsBot::Usagi do
-  subject(:usagi) { BtsBot::Usagi.new }
+describe BtsBot::Plugin::Usagi do
+  subject(:usagi) { BtsBot::Plugin::Usagi.new }
 
   describe '#describe' do
     it 'returns かわいい' do

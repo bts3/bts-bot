@@ -1,10 +1,10 @@
 require 'spec_helper'
 require 'yaml'
 
-describe BtsBot::Iokuji do
-  let(:iokuji_file_path) { File.expand_path('../../../config/iokuji.yml', __FILE__) }
+describe BtsBot::Plugin::Iokuji do
+  let(:iokuji_file_path) { File.expand_path('../../../../config/iokuji.yml', __FILE__) }
   let(:iokuji_spec) { YAML.load_file(iokuji_file_path) }
-  subject(:iokuji) { BtsBot::Iokuji.new(iokuji_file_path) }
+  subject(:iokuji) { BtsBot::Plugin::Iokuji.new(iokuji_file_path) }
 
   describe '#invoke' do
     it 'returns first omikuji result' do

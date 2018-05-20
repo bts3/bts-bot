@@ -1,9 +1,9 @@
 module BtsBot; end
 
-# Plugins
-require 'bts_bot/echo'
-require 'bts_bot/iokuji'
-require 'bts_bot/usagi'
+# Plugin
+require 'bts_bot/plugin/echo'
+require 'bts_bot/plugin/iokuji'
+require 'bts_bot/plugin/usagi'
 
 # Common
 require 'bts_bot/cli'
