@@ -37,8 +37,9 @@ module BtsBot
 
     def load_plugins
       plugins = [
-        Plugin::Iokuji.new(@iokuji_file_path),
         Plugin::Echo.new,
+        Plugin::Iokuji.new(@iokuji_file_path),
+        Plugin::Image.new,
         Plugin::Usagi.new,
       ]
       plugins.each { |p| p.set_callback(@bot) }
