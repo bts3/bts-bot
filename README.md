@@ -2,6 +2,8 @@
 
 http://balancerensa.net/
 
+[![Build Status](https://travis-ci.org/bts3/bts-bot.svg?branch=master)](https://travis-ci.org/bts3/bts-bot)
+
 PR 歓迎です :rabbit: :sparkles:
 
 ## 実装されているコマンド
