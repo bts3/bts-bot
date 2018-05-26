@@ -5,7 +5,11 @@ services:
       context: '.'
     image: 'mozamimy/bts-bot'
     environment:
+      # For Discord (required)
       CLIENT_ID:
       SECRET_TOKEN:
+      # For Image plugin (optional)
+      GOOGLE_CSE_ID:
+      GOOGLE_CSE_API_KEY:
     container_name: 'bts-bot-app'
     command: ["bundle", "exec", "exe/bts_bot"]

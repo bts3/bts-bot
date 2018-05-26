@@ -4,6 +4,7 @@ module BtsBot; end
 require 'bts_bot/plugin/echo'
 require 'bts_bot/plugin/iokuji'
 require 'bts_bot/plugin/usagi'
+require 'bts_bot/plugin/image'
 
 # Common
 require 'bts_bot/cli'
