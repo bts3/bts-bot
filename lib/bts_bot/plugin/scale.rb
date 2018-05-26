@@ -22,7 +22,7 @@ module BtsBot
         elsif score == 100
           bar = "[==========]"
         else
-          numthick = score / 10
+          numthick = (score.to_f / 10).ceil
           bar = "["
           (numthick - 1).times { bar = bar + "=" }
           bar = bar + ">"
