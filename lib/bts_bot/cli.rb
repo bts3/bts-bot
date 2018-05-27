@@ -41,6 +41,7 @@ module BtsBot
         Plugin::Iokuji.new(@iokuji_file_path),
         Plugin::Image.new,
         Plugin::Usagi.new,
+        Plugin::Scale.new
       ]
       plugins.each { |p| p.set_callback(@bot) }
     end
